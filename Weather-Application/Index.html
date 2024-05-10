@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+
+    <title>Aplicacion de Clima</title>
+</head>
+<body>
+
+    <div id="elContainer" class="container">
+        <div class="search-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input id="elInput" type="text" placeholder="Ingresa tu localizacion"> 
+            <button id="busqueda" class="fa-solid fa-magnifying-glass"></button>            
+        </div>
+
+        <div id="no" class="not-found">
+            <img src="Images/404.png">
+            <p>Oops! no es una localizacion valida</p>
+        </div>
+
+        <div id="tiempo" class="weather-box">
+            <img id="image" src="">
+            <p id="temperatura" class="temperature"></p>
+            <p id="descripcion" class="description"></p>
+        </div>
+
+        <div id="detalles" class="weather-details">
+            <div class="humidity">
+                <i class="fa-solid fa-water"></i>
+                <div class="text">
+                    <span id="spanHum"></span>
+                    <p>Humedad</p>
+                </div>
+            </div>
+            <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <span id="spanWin"></span>
+                    <p>Viento</p>
+                </div>
+            </div>
+        </div>
+
+
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+    <script src="Index.js"></script>
+</body>
+</html>
